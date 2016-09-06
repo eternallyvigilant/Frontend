@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+ <hibernate-mapping>
+ 	<class name="Employee" table="EMPLOYEE">
+ 	<meta attribute="class-description">
+         This class contains the employee detail. 
+    </meta>
+      <id name="empid" type="int" column="empid"/>
+      <property name="firstname" column="firstname" type="string"/>
+      <property name="lastname" column="lastname" type="string"/>
+      <property name="contact" column="contact" type="string"/>
+      <property name="dob" column="dob" type="date"/>
+      <property name="email" column="emailid" type="string"/>
+      <property name="supervisor" column="supname" type="string"/>
+      <property name="line" column="linemgr" type="string"/>
+      <property name="obs" column="obsspoc" type="string"/>
+      <property name="department" column="deptname" type="string"/>
+      <property name="grade" column="grade" type="string"/>
+      <property name="recruiter" column="recruiter" type="string"/>
+      <property name="bgroup" column="bgroup" type="string"/>
+ 	</class>
+ </hibernate-mapping>
